@@ -4,21 +4,26 @@
 	"description": "What am I about?",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "node server.js",
+		"server": "nodemon server.js"
 	},
 	"dependencies": {
-		"express": "^4.14.0",
-		"cors": "^2.8.1",
-		"body-parser": "^1.15.2",
+		"body-parser": "^1.19.0",
 		"chai": "^3.5.0",
-		"mongodb": "^2.2.16",
 		"chai-http": "^3.0.0",
-		"mocha": "^3.2.0",
-		"zombie": "^5.0.5",
-		"helmet": "^3.1.0"
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"helmet": "^3.22.0",
+		"mocha": "^3.5.3",
+		"mongodb": "^2.2.36",
+		"mongoose": "^5.9.6",
+		"node-fetch": "^2.6.0",
+		"request": "^2.88.2",
+		"zombie": "^5.0.8"
 	},
 	"engines": {
-		"node": "4.4.3"
+		"node": "8.17.0"
 	},
 	"repository": {
 		"type": "git",
@@ -29,5 +34,8 @@
 		"hyperdev",
 		"express"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"nodemon": "^2.0.2"
+	}
 }
