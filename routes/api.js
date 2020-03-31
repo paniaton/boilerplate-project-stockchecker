@@ -17,7 +17,7 @@ require('dotenv').config()
 const CONNECTION_STRING = process.env.DB; //MongoClient.connect(CONNECTION_STRING, function(err, db) {});
 
 mongoose.connect(CONNECTION_STRING, { useUnifiedTopology: true, useNewUrlParser: true })
-  .then(ok => console.log("Connected to MongoDB!"))
+  .then(ok => console.log(`Connected to MongoDB!`))
   .catch(error => console.log(error));
 
 module.exports = function (app) {
